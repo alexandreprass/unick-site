@@ -1,0 +1,9 @@
+{
+  "routes": [
+    { "src": "/sitemap.xml", "dest": "/sitemap.xml" },
+    { "src": "/logo.png", "dest": "/logo.png" },
+    { "src": "/unickpdf.pdf", "dest": "/unickpdf.pdf" },
+    { "src": "/videos/(.*)", "dest": "/videos/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
