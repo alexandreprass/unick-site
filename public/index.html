@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNICK FOREX A REVOLUÇÃO DO MERCADO FINANCEIRO</title>
     <meta name="description" content="Descubra a revolução do mercado financeiro com UNICK FOREX. Invista e transforme seus ganhos!">
-    <meta name="keywords" content="UNICK FOREX, mercado financeiro, investimento, ganhos, revolução financeira, trading">
+    <meta name="keywords" content="UNICK FOREX, mercado financeiro, unic, unick, unick 2.0, investimento, ganhos, revolução financeira, trading">
     <meta name="author" content="UNICK FOREX">
     <meta property="og:title" content="UNICK FOREX A REVOLUÇÃO DO MERCADO FINANCEIRO">
     <meta property="og:description" content="Participe da revolução do mercado financeiro com UNICK FOREX e transforme seus ganhos. Invista agora!">
@@ -147,7 +147,7 @@
             to { opacity: 1; }
         }
 
-        .download-button {
+        .download-button, .download-app-button {
             background-color: #1e90ff;
             color: #ffffff;
             padding: 8px 20px;
@@ -162,9 +162,11 @@
             align-items: center;
             gap: 8px;
             transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 20px; /* Adiciona margem acima do botão */
+            width: fit-content; /* Ajusta a largura ao conteúdo */
         }
 
-        .download-button:hover {
+        .download-button:hover, .download-app-button:hover {
             background-color: #1c7ed6;
             transform: scale(1.05);
         }
@@ -172,6 +174,19 @@
         .download-button::before {
             content: "↓";
             font-size: 16px;
+        }
+
+        .download-app-button::before {
+            content: "↓"; /* Ícone de download */
+            font-size: 16px;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column; /* Alinha os botões em coluna */
+            align-items: center; /* Centraliza os botões horizontalmente */
+            margin-top: 20px;
+            gap: 10px; /* Espaço entre os botões */
         }
 
         .faq-section {
@@ -184,7 +199,7 @@
         .faq-section h3 {
             font-size: 18px;
             margin-bottom: 10px;
-            color: #ffd700;
+            color: #ffd700; /* Restaura a cor amarela */
         }
 
         .faq-section p {
@@ -192,6 +207,11 @@
             margin-bottom: 20px;
             color: #e0e0e0;
             text-align: center;
+        }
+
+        .faq-section h3 {
+            margin-bottom: 10px; /* Restaura o espaçamento abaixo dos títulos */
+            color: #ffd700;
         }
 
         @media (max-width: 600px) {
@@ -213,13 +233,13 @@
                 padding-bottom: 56.25%;
             }
 
-            .download-button {
+            .download-button, .download-app-button {
                 padding: 6px 15px;
                 font-size: 12px;
                 gap: 6px;
             }
 
-            .download-button::before {
+            .download-button::before, .download-app-button::before {
                 font-size: 14px;
             }
 
@@ -229,6 +249,11 @@
 
             .faq-section p {
                 font-size: 12px;
+            }
+             .button-group {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
             }
         }
     </style>
@@ -251,7 +276,12 @@
                 </video>
             </div>
             <p class="promo-text">Receba de 3% a 7% ao dia de acordo com o resultado das nossas operações</p>
-            <a href="/unickpdf.pdf" class="download-button" download>BAIXAR APRESENTAÇÃO</a>
+            <div class="button-group">
+                <a href="/unickpdf.pdf" class="download-button" download>BAIXAR APRESENTAÇÃO</a>
+                <a href="/unickapp.apk" class="download-app-button" download>
+                    BAIXAR APP
+                </a>
+            </div>
             <div class="faq-section">
                 <h3>Como funciona o investimento na UNICK FOREX?</h3>
                 <p>A UNICK FOREX oferece oportunidades de investimento no mercado financeiro, com o objetivo de proporcionar ganhos aos seus membros através de estratégias de trading.</p>
