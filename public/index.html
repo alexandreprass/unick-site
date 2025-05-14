@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNICK FOREX 2.0: Invista no Mercado Financeiro</title>
     <meta name="description" content="Junte-se à UNICK FOREX 2.0 e invista no mercado financeiro com potencial de ganhos. Cadastre-se agora!">
-    <meta name="keywords" content="UNICK FOREX, mercado financeiro, unick forex 2.0, investimento, trading">
+    <meta name="keywords" content="UNICK FOREX, mercado financeiro, unick forex 2.0, investimento, trading, marketing multinível">
     <meta name="author" content="UNICK FOREX">
     <meta property="og:title" content="UNICK FOREX 2.0: Invista no Mercado Financeiro">
     <meta property="og:description" content="Descubra como investir com a UNICK FOREX 2.0 e participe do mercado financeiro. Clique e cadastre-se!">
@@ -19,8 +19,17 @@
     <meta name="twitter:image" content="/logo.png">
     <link rel="icon" type="image/png" href="/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "UNICK FOREX 2.0",
+      "url": "https://unickforex.club",
+      "logo": "https://unickforex.club/logo.png",
+      "description": "UNICK FOREX 2.0 oferece oportunidades de investimento no mercado financeiro e marketing multinível."
+    }
+    </script>
     <style>
-        /* Estilos mantidos do código original, com adição do menu */
         * {
             margin: 0;
             padding: 0;
@@ -67,6 +76,21 @@
         nav a:hover {
             color: #ffd700;
         }
+        header .logo img {
+            max-width: 250px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        @media (max-width: 600px) {
+            header .logo img {
+                max-width: 180px;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
         .cta-button {
             background-color: #ff3333;
             color: #ffffff;
@@ -101,6 +125,10 @@
             background: #000;
             border-radius: 15px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s ease;
+        }
+        .video-container:hover {
+            transform: translateY(-5px);
         }
         .video-container video {
             position: absolute;
@@ -114,6 +142,12 @@
             font-weight: 600;
             color: #ffd700;
             text-transform: uppercase;
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+            animation-delay: 0.5s;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
         }
         .download-button, .download-app-button {
             background-color: #1e90ff;
@@ -129,11 +163,16 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
             margin-top: 20px;
         }
         .download-button:hover, .download-app-button:hover {
             background-color: #1c7ed6;
             transform: scale(1.05);
+        }
+        .download-button::before, .download-app-button::before {
+            content: "↓";
+            font-size: 16px;
         }
         .button-group {
             display: flex;
@@ -149,10 +188,6 @@
             text-align: center;
         }
         @media (max-width: 600px) {
-            nav ul {
-                flex-direction: column;
-                gap: 10px;
-            }
             .cta-button {
                 padding: 14px 30px;
                 font-size: 18px;
@@ -167,6 +202,10 @@
             .download-button, .download-app-button {
                 padding: 6px 15px;
                 font-size: 12px;
+                gap: 6px;
+            }
+            .download-button::before, .download-app-button::before {
+                font-size: 14px;
             }
         }
     </style>
