@@ -94,6 +94,10 @@
             font-size: 18px;
             color: #e0e0e0;
             line-height: 1.6;
+            margin-bottom: 1cm; /* Adicionado espaçamento de 1cm abaixo dos parágrafos */
+        }
+        p:last-of-type {
+            margin-bottom: 1cm; /* Garante espaçamento antes do botão */
         }
         .cta-button {
             background-color: #ff3333;
@@ -111,6 +115,7 @@
             animation: pulse 2s infinite;
             position: relative;
             z-index: 1;
+            margin-top: 1cm; /* Adicionado espaçamento de 1cm acima do botão */
         }
         .cta-button:hover {
             background-color: #cc0000;
@@ -120,12 +125,6 @@
             0% { transform: scale(1); }
             50% { transform: scale(1.03); }
             100% { transform: scale(1); }
-        }
-        .disclaimer {
-            font-size: 12px;
-            color: #e0e0e0;
-            margin-top: 40px;
-            text-align: center;
         }
         @media (max-width: 600px) {
             body {
@@ -143,10 +142,15 @@
             }
             p {
                 font-size: 16px;
+                margin-bottom: 0.5cm; /* Ajustando espaçamento para telas menores */
+            }
+            p:last-of-type {
+                margin-bottom: 0.5cm;
             }
             .cta-button {
                 padding: 14px 30px;
                 font-size: 18px;
+                margin-top: 0.5cm; /* Ajustando espaçamento para telas menores */
             }
         }
     </style>
@@ -195,9 +199,6 @@
             <p>Não perca tempo, cadastre-se agora mesmo.</p>
             <a href="https://unickforex.club/link/alexpra" class="cta-button" onclick="return gtag_report_conversion('https://unickforex.club/link/alexpra');">CADASTRAR-SE</a>
         </main>
-        <div class="disclaimer">
-            <p>Aviso: Investimentos envolvem riscos. Retornos não são garantidos. Consulte os termos e condições antes de investir.</p>
-        </div>
     </div>
 </body>
 </html>
