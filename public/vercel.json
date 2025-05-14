@@ -4,7 +4,7 @@
     { "src": "/logo.png", "dest": "/logo.png" },
     { "src": "/unickpdf.pdf", "dest": "/unickpdf.pdf" },
     { "src": "/videos/(.*)", "dest": "/videos/$1" },
-    { "src": "/sobre", "dest": "/sobre.html" },
+    { "src": "/sobre.html", "dest": "/sobre" },
     { "src": "/como-funciona", "dest": "/como-funciona.html" },
     { "src": "/contato", "dest": "/contato.html" },
     { "src": "/(.*)", "dest": "/index.html" }
