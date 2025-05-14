@@ -128,7 +128,7 @@
             height: 0;
             overflow: hidden;
             max-width: 50%;
-            margin: 0 auto;
+            margin: 20px auto;
             background: #000;
             border-radius: 15px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
@@ -152,6 +152,7 @@
             opacity: 0;
             animation: fadeIn 1s ease forwards;
             animation-delay: 0.5s;
+            margin-top: 20px;
         }
         @keyframes fadeIn {
             to { opacity: 1; }
@@ -171,7 +172,7 @@
             align-items: center;
             gap: 8px;
             transition: background-color 0.3s ease, transform 0.2s ease;
-            margin-top: 20px;
+            margin-top: 10px;
         }
         .download-button:hover, .download-app-button:hover {
             background-color: #1c7ed6;
@@ -190,7 +191,7 @@
         }
         .faq-section {
             margin-top: 40px;
-            text-align: center;
+            text-align: center; /* Centraliza o conteúdo da seção */
             max-width: 600px;
             margin: 40px auto;
         }
@@ -200,16 +201,20 @@
             color: #ffd700;
             margin-bottom: 20px;
         }
-        .faq-section h3 {
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .faq-item h3 {
             font-size: 18px;
             margin-bottom: 10px;
             color: #ffffff;
+            text-align: center; /* Centraliza a pergunta */
         }
-        .faq-section p {
+        .faq-item p {
             font-size: 16px;
-            margin-bottom: 20px;
             color: #e0e0e0;
-            text-align: left;
+            text-align: center; /* Centraliza a resposta */
+            line-height: 1.6;
         }
         .disclaimer {
             font-size: 12px;
@@ -256,10 +261,10 @@
             .faq-section h2 {
                 font-size: 20px;
             }
-            .faq-section h3 {
+            .faq-item h3 {
                 font-size: 16px;
             }
-            .faq-section p {
+            .faq-item p {
                 font-size: 14px;
             }
         }
@@ -322,12 +327,22 @@
         </section>
         <section id="perguntas-frequentes" class="faq-section">
             <h2>Perguntas Frequentes</h2>
-            <h3>Como funciona o investimento na UNICK FOREX?</h3>
-            <p>A UNICK FOREX oferece oportunidades de investimento no mercado financeiro, com o objetivo de proporcionar ganhos aos seus membros através de estratégias de trading.</p>
-            <h3>Quais os benefícios de investir com a UNICK FOREX?</h3>
-            <p>Investir com a UNICK FOREX pode oferecer potencial de ganhos no mercado financeiro e a oportunidade de participar de uma comunidade focada em resultados.</p>
-            <h3>Quais são os riscos envolvidos?</h3>
-            <p>Todo investimento envolve riscos, incluindo a possibilidade de perda de capital. Recomendamos que você leia os termos e condições e consulte um profissional financeiro antes de investir.</p>
+            <div class="faq-item">
+                <h3>QUAL A % DE LUCRO QUE GANHO SOBRE MEU CAPITAL?</h3>
+                <p>O lucro será de 3% a 7% ao dia, de acordo com os ganhos da nossa empresa. Você pode acompanhar a % diária na nossa comunidade oficial do Telegram e WhatsApp.</p>
+            </div>
+            <div class="faq-item">
+                <h3>POSSO SACAR TODOS OS DIAS?</h3>
+                <p>Você pode sacar de segunda a sábado, das 12:00 às 18:00 horas. O saque tem uma taxa de 5%.</p>
+            </div>
+            <div class="faq-item">
+                <h3>QUAL O LIMITE DE GANHO?</h3>
+                <p>O limite de ganho será de 200% o valor do seu investimento.</p>
+            </div>
+            <div class="faq-item">
+                <h3>GANHO ALGUMA COISA INDICANDO AMIGOS?</h3>
+                <p>Sim, você ganha 11% para indicações diretas e mais bônus até o 10º nível.</p>
+            </div>
         </section>
         <div class="disclaimer">
             <p>Aviso: Investimentos envolvem riscos. Retornos não são garantidos. Consulte os termos e condições antes de investir.</p>
