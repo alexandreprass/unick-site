@@ -107,23 +107,24 @@
             margin: 0 auto;
         }
         h1 {
-            font-size: 32px;
+            font-size: 18px; /* Tamanho uniforme com parágrafos */
             font-weight: 700;
             color: #ffd700;
             margin-bottom: 20px;
+            text-align: center;
         }
         p {
             font-size: 18px;
             color: #e0e0e0;
             line-height: 1.6;
             margin-bottom: 1cm;
-            text-align: left;
+            text-align: center;
         }
         .cta-button {
             background-color: #ff3333;
             color: #ffffff;
             padding: 18px 40px;
-            font-size: 20px;
+            font-size: 18px; /* Tamanho uniforme com parágrafos e h1 */
             font-weight: 600;
             text-transform: uppercase;
             border: none;
@@ -136,6 +137,7 @@
             position: relative;
             z-index: 1;
             margin-top: 2cm;
+            text-align: center;
         }
         .cta-button:hover {
             background-color: #cc0000;
@@ -157,17 +159,15 @@
                 flex-direction: column;
                 gap: 10px;
             }
-            h1 {
-                font-size: 24px;
+            h1, p, .cta-button {
+                font-size: 18px; /* Tamanho uniforme mantido em telas menores */
+                text-align: center;
             }
             p {
-                font-size: 16px;
                 margin-bottom: 0.5cm;
-                text-align: left;
             }
             .cta-button {
                 padding: 14px 30px;
-                font-size: 18px;
                 margin-top: 1cm;
             }
         }
