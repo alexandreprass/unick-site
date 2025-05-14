@@ -95,6 +95,10 @@
             font-size: 18px;
             color: #e0e0e0;
             line-height: 1.6;
+            margin-bottom: 1cm; /* Adicionado espaçamento abaixo dos parágrafos */
+        }
+        p:last-of-type {
+            margin-bottom: 1cm; /* Garante espaçamento antes do botão */
         }
         .cta-button {
             background-color: #ff3333;
@@ -112,6 +116,7 @@
             animation: pulse 2s infinite;
             position: relative;
             z-index: 1;
+            margin-top: 1cm; /* Adicionado espaçamento de 1cm acima do botão */
         }
         .cta-button:hover {
             background-color: #cc0000;
@@ -238,10 +243,15 @@
             }
             p {
                 font-size: 16px;
+                margin-bottom: 0.5cm; /* Ajustando espaçamento para telas menores */
+            }
+            p:last-of-type {
+                margin-bottom: 0.5cm; /* Garante espaçamento antes do botão em telas menores */
             }
             .cta-button {
                 padding: 14px 30px;
                 font-size: 18px;
+                margin-top: 0.5cm; /* Ajustando espaçamento para telas menores */
             }
             .promo-text {
                 font-size: 18px;
@@ -310,6 +320,7 @@
         <main>
             <h1>UNICK FOREX 2.0: Invista no Mercado Financeiro</h1>
             <p>Participe da UNICK FOREX 2.0 e descubra oportunidades de investimento no mercado financeiro. Nossa plataforma conecta você a estratégias de trading com potencial de ganhos. Cadastre-se agora e comece sua jornada!</p>
+            <p>Explore o potencial de ganhos com a UNICK FOREX 2.0</p>
             <a href="https://unickforex.club/link/alexpra" class="cta-button" onclick="return gtag_report_conversion('https://unickforex.club/link/alexpra');">CADASTRAR-SE</a>
         </main>
         <section>
@@ -319,7 +330,6 @@
                     Seu navegador não suporta o elemento de vídeo.
                 </video>
             </div>
-            <p class="promo-text">Explore o potencial de ganhos com a UNICK FOREX 2.0</p>
             <div class="button-group">
                 <a href="/unickpdf.pdf" class="download-button" download>BAIXAR APRESENTAÇÃO</a>
                 <a href="https://drive.google.com/file/d/1Cff-wjilKqG8t5Wsp9jLDXeDuu-YHjCD/view" class="download-app-button" download>BAIXAR APP</a>
