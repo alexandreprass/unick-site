@@ -18,6 +18,7 @@
     <meta name="twitter:description" content="Junte-se à UNICK FOREX 2.0 e invista no mercado financeiro. Cadastre-se agora!">
     <meta name="twitter:image" content="https://unickforex.vercel.app/logo.png">
     <link rel="icon" type="image/png" href="/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -42,7 +43,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px;
+            padding: 30px;
             padding-top: 80px;
         }
         .container {
@@ -51,7 +52,7 @@
             text-align: center;
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: 40px;
         }
         nav {
             position: fixed;
@@ -78,39 +79,32 @@
         nav a:hover {
             color: #ffd700;
         }
-        .logo {
-            font-size: 24px; /* Reduzido drasticamente o tamanho do texto do logo */
-            font-weight: 700;
-            color: #ffd700;
-            text-transform: uppercase;
+        header .logo img {
+            max-width: 250px;
+            height: auto;
             display: block;
             margin: 0 auto;
-            text-align: center;
-        }
-        .logo span {
-            font-size: 28px; /* Tamanho um pouco maior para o "2.0" */
-            color: #ffffff;
         }
         h1 {
             font-size: 32px;
             font-weight: 700;
             color: #ffd700;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         p {
             font-size: 18px;
             color: #e0e0e0;
             line-height: 1.6;
-            margin-bottom: 0.8cm;
+            margin-bottom: 1cm; /* Adicionado espaçamento abaixo dos parágrafos */
         }
         p:last-of-type {
-            margin-bottom: 0.8cm;
+            margin-bottom: 1cm; /* Garante espaçamento antes do botão */
         }
         .cta-button {
             background-color: #ff3333;
             color: #ffffff;
-            padding: 15px 35px;
-            font-size: 18px;
+            padding: 18px 40px;
+            font-size: 20px;
             font-weight: 600;
             text-transform: uppercase;
             border: none;
@@ -122,7 +116,7 @@
             animation: pulse 2s infinite;
             position: relative;
             z-index: 1;
-            margin-top: 0.8cm;
+            margin-top: 1cm; /* Adicionado espaçamento de 1cm acima do botão */
         }
         .cta-button:hover {
             background-color: #cc0000;
@@ -135,11 +129,11 @@
         }
         .video-container {
             position: relative;
-            padding-bottom: 56.25%;
+            padding-bottom: 28.125%;
             height: 0;
             overflow: hidden;
-            max-width: 80%;
-            margin: 15px auto;
+            max-width: 50%;
+            margin: 20px auto;
             background: #000;
             border-radius: 15px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
@@ -197,76 +191,73 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 15px;
+            margin-top: 20px;
             gap: 10px;
         }
         .faq-section {
-            margin-top: 30px;
-            text-align: center;
+            margin-top: 40px;
+            text-align: center; /* Centraliza o conteúdo da seção */
             max-width: 600px;
-            margin: 30px auto;
+            margin: 40px auto;
         }
         .faq-section h2 {
             font-size: 24px;
             font-weight: 700;
             color: #ffd700;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         .faq-item {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         .faq-item h3 {
             font-size: 18px;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             color: #ffffff;
-            text-align: center;
+            text-align: center; /* Centraliza a pergunta */
         }
         .faq-item p {
             font-size: 16px;
             color: #e0e0e0;
-            text-align: center;
+            text-align: center; /* Centraliza a resposta */
             line-height: 1.6;
         }
         .disclaimer {
             font-size: 12px;
             color: #e0e0e0;
-            margin-top: 30px;
+            margin-top: 40px;
             text-align: center;
         }
         @media (max-width: 600px) {
             body {
-                padding-top: 100px;
+                padding-top: 120px;
             }
-            .logo {
-                font-size: 18px !important; /* Reduzido ainda mais para telas menores */
-            }
-            .logo span {
-                font-size: 20px !important; /* Ajustado para telas menores */
+            header .logo img {
+                max-width: 180px;
             }
             nav ul {
                 flex-direction: column;
                 gap: 10px;
             }
             h1 {
-                font-size: 26px;
+                font-size: 24px;
             }
             p {
                 font-size: 16px;
-                margin-bottom: 0.5cm;
+                margin-bottom: 0.5cm; /* Ajustando espaçamento para telas menores */
             }
             p:last-of-type {
-                margin-bottom: 0.5cm;
+                margin-bottom: 0.5cm; /* Garante espaçamento antes do botão em telas menores */
             }
             .cta-button {
-                padding: 12px 25px;
-                font-size: 16px;
-                margin-top: 0.5cm;
+                padding: 14px 30px;
+                font-size: 18px;
+                margin-top: 0.5cm; /* Ajustando espaçamento para telas menores */
             }
             .promo-text {
                 font-size: 18px;
             }
             .video-container {
-                max-width: 90%;
+                max-width: 100%;
                 padding-bottom: 56.25%;
             }
             .download-button, .download-app-button {
@@ -288,6 +279,27 @@
             }
         }
     </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16921780633"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-16921780633');
+    </script>
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-16921780633/EmKRCIfg9MQaEJnD94Q_',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -302,14 +314,14 @@
     <div class="container">
         <header>
             <div class="logo">
-                UNICK FOREX <span>2.0</span>
+                <img src="/logo.png" alt="Logo UNICK FOREX 2.0">
             </div>
         </header>
         <main>
             <h1>UNICK FOREX 2.0: Invista no Mercado Financeiro</h1>
             <p>Participe da UNICK FOREX 2.0 e descubra oportunidades de investimento no mercado financeiro. Nossa plataforma conecta você a estratégias de trading com potencial de ganhos. Cadastre-se agora e comece sua jornada!</p>
             <p>Explore o potencial de ganhos com a UNICK FOREX 2.0</p>
-            <a href="https://unickforex.club/link/alexpra" class="cta-button">CADASTRAR-SE</a>
+            <a href="https://unickforex.club/link/alexpra" class="cta-button" onclick="return gtag_report_conversion('https://unickforex.club/link/alexpra');">CADASTRAR-SE</a>
         </main>
         <section>
             <div class="video-container">
