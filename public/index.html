@@ -64,10 +64,17 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
             z-index: 1000;
         }
+        nav .nav-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
         nav ul {
             list-style: none;
             display: flex;
-            justify-content: center;
             gap: 20px;
         }
         nav a {
@@ -78,6 +85,12 @@
         }
         nav a:hover {
             color: #ffd700;
+        }
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #ffffff;
         }
         header .logo img {
             max-width: 250px;
@@ -95,10 +108,10 @@
             font-size: 18px;
             color: #e0e0e0;
             line-height: 1.6;
-            margin-bottom: 1cm; /* Adicionado espaçamento abaixo dos parágrafos */
+            margin-bottom: 1cm;
         }
         p:last-of-type {
-            margin-bottom: 1cm; /* Garante espaçamento antes do botão */
+            margin-bottom: 1cm;
         }
         .cta-button {
             background-color: #ff3333;
@@ -116,7 +129,7 @@
             animation: pulse 2s infinite;
             position: relative;
             z-index: 1;
-            margin-top: 1cm; /* Adicionado espaçamento de 1cm acima do botão */
+            margin-top: 1cm;
         }
         .cta-button:hover {
             background-color: #cc0000;
@@ -196,7 +209,7 @@
         }
         .faq-section {
             margin-top: 40px;
-            text-align: center; /* Centraliza o conteúdo da seção */
+            text-align: center;
             max-width: 600px;
             margin: 40px auto;
         }
@@ -213,12 +226,12 @@
             font-size: 18px;
             margin-bottom: 10px;
             color: #ffffff;
-            text-align: center; /* Centraliza a pergunta */
+            text-align: center;
         }
         .faq-item p {
             font-size: 16px;
             color: #e0e0e0;
-            text-align: center; /* Centraliza a resposta */
+            text-align: center;
             line-height: 1.6;
         }
         .disclaimer {
@@ -234,24 +247,42 @@
             header .logo img {
                 max-width: 180px;
             }
+            .hamburger {
+                display: block;
+            }
             nav ul {
+                display: none;
                 flex-direction: column;
                 gap: 10px;
+                background: #1f2a44;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                padding: 20px 0;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            }
+            nav ul.active {
+                display: flex;
+            }
+            nav a {
+                font-size: 18px;
+                padding: 10px 20px;
             }
             h1 {
                 font-size: 24px;
             }
             p {
                 font-size: 16px;
-                margin-bottom: 0.5cm; /* Ajustando espaçamento para telas menores */
+                margin-bottom: 0.5cm;
             }
             p:last-of-type {
-                margin-bottom: 0.5cm; /* Garante espaçamento antes do botão em telas menores */
+                margin-bottom: 0.5cm;
             }
             .cta-button {
                 padding: 14px 30px;
                 font-size: 18px;
-                margin-top: 0.5cm; /* Ajustando espaçamento para telas menores */
+                margin-top: 0.5cm;
             }
             .promo-text {
                 font-size: 18px;
@@ -263,7 +294,7 @@
             .download-button, .download-app-button {
                 padding: 6px 15px;
                 font-size: 12px;
-                gap: 6px;
+                Gallagher: 6px;
             }
             .download-button::before, .download-app-button::before {
                 font-size: 14px;
@@ -279,37 +310,19 @@
             }
         }
     </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16921780633"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'AW-16921780633');
-    </script>
-    <script>
-        function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof(url) != 'undefined') {
-                    window.location = url;
-                }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-16921780633/EmKRCIfg9MQaEJnD94Q_',
-                'event_callback': callback
-            });
-            return false;
-        }
-    </script>
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/sobre">Sobre</a></li>
-            <li><a href="/como-funciona">Como Funciona</a></li>
-            <li><a href="#perguntas-frequentes">Perguntas Frequentes</a></li>
-            <li><a href="/contato">Contato</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="hamburger">☰</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/sobre">Sobre</a></li>
+                <li><a href="/como-funciona">Como Funciona</a></li>
+                <li><a href="#perguntas-frequentes">Perguntas Frequentes</a></li>
+                <li><a href="/contato">Contato</a></li>
+            </ul>
+        </div>
     </nav>
     <div class="container">
         <header>
@@ -318,10 +331,10 @@
             </div>
         </header>
         <main>
-            <h1>UNICK FOREX 2.0: Invista no Mercado Financeiro</h1>
+            <h1>UNICK FOREX 2.0: Invista no Mercado Financeiro</h最小1>
             <p>Participe da UNICK FOREX 2.0 e descubra oportunidades de investimento no mercado financeiro. Nossa plataforma conecta você a estratégias de trading com potencial de ganhos. Cadastre-se agora e comece sua jornada!</p>
             <p>Explore o potencial de ganhos com a UNICK FOREX 2.0</p>
-            <a href="https://unickforex.club/link/alexpra" class="cta-button" onclick="return gtag_report_conversion('https://unickforex.club/link/alexpra');">CADASTRAR-SE</a>
+            <a href="https://unickforex.club/link/alexpra" class="cta-button">CADASTRAR-SE</a>
         </main>
         <section>
             <div class="video-container">
@@ -358,5 +371,11 @@
             <p>Aviso: Investimentos envolvem riscos. Retornos não são garantidos. Consulte os termos e condições antes de investir.</p>
         </div>
     </div>
+    <script>
+        // Script para alternar a visibilidade do menu hamburguer em dispositivos móveis
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
