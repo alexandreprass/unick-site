@@ -7,8 +7,7 @@
     { "src": "/videos/(.*)", "dest": "/videos/$1" },
     { "src": "/sobre", "dest": "/sobre.html" },
     { "src": "/como-funciona", "dest": "/como-funciona.html" },
-    { "src": "/contato", "dest": "/contato.html" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "/contato", "dest": "/contato.html" }
   ],
   "headers": [
     {
