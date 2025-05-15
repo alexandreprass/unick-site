@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<! DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -45,7 +45,7 @@
             padding: 30px;
             padding-top: 80px;
         }
-      .container {
+        .container {
             max-width: 900px;
             width: 100%;
             text-align: center;
@@ -79,7 +79,7 @@
             color: #ffd700;
         }
         header.logo img {
-            max-width: 100px; /* Reduzi ainda mais o tamanho máximo do logo */
+            max-width: 80px; /* Reduzido de 100px para 80px */
             height: auto;
             display: block;
             margin: 0 auto;
@@ -94,12 +94,12 @@
             font-size: 18px;
             color: #e0e0e0;
             line-height: 1.6;
-            margin-bottom: 1cm; /* Adicionado espaçamento abaixo dos parágrafos */
+            margin-bottom: 1cm;
         }
         p:last-of-type {
-            margin-bottom: 1cm; /* Garante espaçamento antes do botão */
+            margin-bottom: 1cm;
         }
-      .cta-button {
+        .cta-button {
             background-color: #ff3333;
             color: #ffffff;
             padding: 18px 40px;
@@ -115,9 +115,9 @@
             animation: pulse 2s infinite;
             position: relative;
             z-index: 1;
-            margin-top: 1cm; /* Adicionado espaçamento de 1cm acima do botão */
+            margin-top: 1cm;
         }
-      .cta-button:hover {
+        .cta-button:hover {
             background-color: #cc0000;
             transform: scale(1.05);
         }
@@ -126,7 +126,7 @@
             50% { transform: scale(1.03); }
             100% { transform: scale(1); }
         }
-      .video-container {
+        .video-container {
             position: relative;
             padding-bottom: 28.125%;
             height: 0;
@@ -138,17 +138,17 @@
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
             transition: transform 0.3s ease;
         }
-      .video-container:hover {
+        .video-container:hover {
             transform: translateY(-5px);
         }
-      .video-container video {
+        .video-container video {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
         }
-      .promo-text {
+        .promo-text {
             font-size: 24px;
             font-weight: 600;
             color: #ffd700;
@@ -161,7 +161,7 @@
         @keyframes fadeIn {
             to { opacity: 1; }
         }
-      .download-button,.download-app-button {
+        .download-button, .download-app-button {
             background-color: #1e90ff;
             color: #ffffff;
             padding: 8px 20px;
@@ -178,49 +178,49 @@
             transition: background-color 0.3s ease, transform 0.2s ease;
             margin-top: 10px;
         }
-      .download-button:hover,.download-app-button:hover {
+        .download-button:hover, .download-app-button:hover {
             background-color: #1c7ed6;
             transform: scale(1.05);
         }
-      .download-button::before,.download-app-button::before {
+        .download-button::before, .download-app-button::before {
             content: "↓";
             font-size: 16px;
         }
-      .button-group {
+        .button-group {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 20px;
             gap: 10px;
         }
-      .faq-section {
+        .faq-section {
             margin-top: 40px;
-            text-align: center; /* Centraliza o conteúdo da seção */
+            text-align: center;
             max-width: 600px;
             margin: 40px auto;
         }
-      .faq-section h2 {
+        .faq-section h2 {
             font-size: 24px;
             font-weight: 700;
             color: #ffd700;
             margin-bottom: 20px;
         }
-      .faq-item {
+        .faq-item {
             margin-bottom: 20px;
         }
-      .faq-item h3 {
+        .faq-item h3 {
             font-size: 18px;
             margin-bottom: 10px;
             color: #ffffff;
-            text-align: center; /* Centraliza a pergunta */
+            text-align: center;
         }
-      .faq-item p {
+        .faq-item p {
             font-size: 16px;
             color: #e0e0e0;
-            text-align: center; /* Centraliza a resposta */
+            text-align: center;
             line-height: 1.6;
         }
-      .disclaimer {
+        .disclaimer {
             font-size: 12px;
             color: #e0e0e0;
             margin-top: 40px;
@@ -231,7 +231,7 @@
                 padding-top: 120px;
             }
             header.logo img {
-                max-width: 180px;
+                max-width: 120px; /* Reduzido de 180px para 120px */
             }
             nav ul {
                 flex-direction: column;
@@ -242,38 +242,38 @@
             }
             p {
                 font-size: 16px;
-                margin-bottom: 0.5cm; /* Ajustando espaçamento para telas menores */
+                margin-bottom: 0.5cm;
             }
             p:last-of-type {
-                margin-bottom: 0.5cm; /* Garante espaçamento antes do botão em telas menores */
+                margin-bottom: 0.5cm;
             }
-          .cta-button {
+            .cta-button {
                 padding: 14px 30px;
                 font-size: 18px;
-                margin-top: 0.5cm; /* Ajustando espaçamento para telas menores */
+                margin-top: 0.5cm;
             }
-          .promo-text {
+            .promo-text {
                 font-size: 18px;
             }
-          .video-container {
+            .video-container {
                 max-width: 100%;
                 padding-bottom: 56.25%;
             }
-          .download-button,.download-app-button {
+            .download-button, .download-app-button {
                 padding: 6px 15px;
                 font-size: 12px;
                 gap: 6px;
             }
-          .download-button::before,.download-app-button::before {
+            .download-button::before, .download-app-button::before {
                 font-size: 14px;
             }
-          .faq-section h2 {
+            .faq-section h2 {
                 font-size: 20px;
             }
-          .faq-item h3 {
+            .faq-item h3 {
                 font-size: 16px;
             }
-          .faq-item p {
+            .faq-item p {
                 font-size: 14px;
             }
         }
