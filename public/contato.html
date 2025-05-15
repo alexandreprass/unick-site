@@ -53,10 +53,17 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
             z-index: 1000;
         }
+        nav .nav-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center; /* Centraliza o menu no PC */
+            align-items: center;
+            padding: 0 20px;
+        }
         nav ul {
             list-style: none;
             display: flex;
-            justify-content: center;
             gap: 20px;
         }
         nav a {
@@ -67,6 +74,12 @@
         }
         nav a:hover {
             color: #ffd700;
+        }
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #ffffff;
         }
         header .logo img {
             max-width: 250px;
@@ -115,9 +128,30 @@
             header .logo img {
                 max-width: 180px;
             }
+            .hamburger {
+                display: block;
+            }
+            nav .nav-container {
+                justify-content: space-between; /* Alinha o hamburguer à esquerda e o menu à direita */
+            }
             nav ul {
+                display: none;
                 flex-direction: column;
                 gap: 10px;
+                background: #1f2a44;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                padding: 20px 0;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            }
+            nav ul.active {
+                display: flex;
+            }
+            nav a {
+                font-size: 18px;
+                padding: 10px 20px;
             }
             h1 {
                 font-size: 24px;
@@ -139,13 +173,16 @@
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/sobre">Sobre</a></li>
-            <li><a href="/como-funciona">Como Funciona</a></li>
-            <li><a href="/#perguntas-frequentes">Perguntas Frequentes</a></li>
-            <li><a href="/contato">Contato</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="hamburger">☰</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/sobre">Sobre</a></li>
+                <li><a href="/como-funciona">Como Funciona</a></li>
+                <li><a href="/#perguntas-frequentes">Perguntas Frequentes</a></li>
+                <li><a href="/contato">Contato</a></li>
+            </ul>
+        </div>
     </nav>
     <div class="container">
         <header>
@@ -164,5 +201,11 @@
             </a>
         </main>
     </div>
+    <script>
+        // Script para alternar a visibilidade do menu hamburguer em dispositivos móveis
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
