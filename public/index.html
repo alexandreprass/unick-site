@@ -42,7 +42,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px; /* Reduzido para menos padding geral */
+            padding: 20px;
             padding-top: 80px;
         }
         .container {
@@ -51,7 +51,7 @@
             text-align: center;
             display: flex;
             flex-direction: column;
-            gap: 30px; /* Reduzido o gap entre seções */
+            gap: 30px;
         }
         nav {
             position: fixed;
@@ -79,22 +79,24 @@
             color: #ffd700;
         }
         header.logo img {
-            max-width: 80px;
-            height: auto;
+            max-width: 80px; /* Tamanho máximo fixo */
+            width: 80px; /* Força a largura exata */
+            height: auto; /* Mantém a proporção */
             display: block;
             margin: 0 auto;
+            object-fit: contain; /* Garante que a imagem não estique */
         }
         h1 {
             font-size: 32px;
             font-weight: 700;
             color: #ffd700;
-            margin-bottom: 15px; /* Reduzido o margin-bottom */
+            margin-bottom: 15px;
         }
         p {
             font-size: 18px;
             color: #e0e0e0;
             line-height: 1.6;
-            margin-bottom: 0.8cm; /* Reduzido o espaçamento */
+            margin-bottom: 0.8cm;
         }
         p:last-of-type {
             margin-bottom: 0.8cm;
@@ -102,8 +104,8 @@
         .cta-button {
             background-color: #ff3333;
             color: #ffffff;
-            padding: 15px 35px; /* Reduzido o padding para um botão mais compacto */
-            font-size: 18px; /* Reduzido o tamanho da fonte */
+            padding: 15px 35px;
+            font-size: 18px;
             font-weight: 600;
             text-transform: uppercase;
             border: none;
@@ -128,11 +130,11 @@
         }
         .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* Ajustado para proporção mais comum */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
-            max-width: 80%; /* Reduzido para ocupar menos espaço */
-            margin: 15px auto; /* Reduzido o margin */
+            max-width: 80%;
+            margin: 15px auto;
             background: #000;
             border-radius: 15px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
@@ -190,11 +192,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 15px; /* Reduzido o margin-top */
+            margin-top: 15px;
             gap: 10px;
         }
         .faq-section {
-            margin-top: 30px; /* Reduzido o margin-top */
+            margin-top: 30px;
             text-align: center;
             max-width: 600px;
             margin: 30px auto;
@@ -203,14 +205,14 @@
             font-size: 24px;
             font-weight: 700;
             color: #ffd700;
-            margin-bottom: 15px; /* Reduzido o margin-bottom */
+            margin-bottom: 15px;
         }
         .faq-item {
-            margin-bottom: 15px; /* Reduzido o margin-bottom */
+            margin-bottom: 15px;
         }
         .faq-item h3 {
             font-size: 18px;
-            margin-bottom: 8px; /* Reduzido o margin-bottom */
+            margin-bottom: 8px;
             color: #ffffff;
             text-align: center;
         }
@@ -223,40 +225,43 @@
         .disclaimer {
             font-size: 12px;
             color: #e0e0e0;
-            margin-top: 30px; /* Reduzido o margin-top */
+            margin-top: 30px;
             text-align: center;
         }
         @media (max-width: 600px) {
             body {
-                padding-top: 100px; /* Reduzido para menos espaço no topo */
+                padding-top: 100px;
             }
             header.logo img {
-                max-width: 100px; /* Reduzido ainda mais para telas menores */
+                max-width: 80px; /* Reduzido para 80px em telas menores */
+                width: 80px; /* Força a largura exata */
+                height: auto;
+                object-fit: contain;
             }
             nav ul {
                 flex-direction: column;
                 gap: 10px;
             }
             h1 {
-                font-size: 26px; /* Ajustado para melhor legibilidade */
+                font-size: 26px;
             }
             p {
-                font-size: 16px; /* Aumentado para melhor legibilidade */
+                font-size: 16px;
                 margin-bottom: 0.5cm;
             }
             p:last-of-type {
                 margin-bottom: 0.5cm;
             }
             .cta-button {
-                padding: 12px 25px; /* Reduzido o padding */
-                font-size: 16px; /* Reduzido o tamanho da fonte */
+                padding: 12px 25px;
+                font-size: 16px;
                 margin-top: 0.5cm;
             }
             .promo-text {
                 font-size: 18px;
             }
             .video-container {
-                max-width: 90%; /* Ajustado para ocupar menos espaço */
+                max-width: 90%;
                 padding-bottom: 56.25%;
             }
             .download-button, .download-app-button {
@@ -274,7 +279,7 @@
                 font-size: 16px;
             }
             .faq-item p {
-                font-size: 14px; /* Aumentado para melhor legibilidade */
+                font-size: 14px;
             }
         }
     </style>
