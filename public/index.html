@@ -1,4 +1,4 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -42,7 +42,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 30px;
+            padding: 20px; /* Reduzido para menos padding geral */
             padding-top: 80px;
         }
         .container {
@@ -51,7 +51,7 @@
             text-align: center;
             display: flex;
             flex-direction: column;
-            gap: 40px;
+            gap: 30px; /* Reduzido o gap entre seções */
         }
         nav {
             position: fixed;
@@ -79,7 +79,7 @@
             color: #ffd700;
         }
         header.logo img {
-            max-width: 80px; /* Reduzido de 100px para 80px */
+            max-width: 80px;
             height: auto;
             display: block;
             margin: 0 auto;
@@ -88,22 +88,22 @@
             font-size: 32px;
             font-weight: 700;
             color: #ffd700;
-            margin-bottom: 20px;
+            margin-bottom: 15px; /* Reduzido o margin-bottom */
         }
         p {
             font-size: 18px;
             color: #e0e0e0;
             line-height: 1.6;
-            margin-bottom: 1cm;
+            margin-bottom: 0.8cm; /* Reduzido o espaçamento */
         }
         p:last-of-type {
-            margin-bottom: 1cm;
+            margin-bottom: 0.8cm;
         }
         .cta-button {
             background-color: #ff3333;
             color: #ffffff;
-            padding: 18px 40px;
-            font-size: 20px;
+            padding: 15px 35px; /* Reduzido o padding para um botão mais compacto */
+            font-size: 18px; /* Reduzido o tamanho da fonte */
             font-weight: 600;
             text-transform: uppercase;
             border: none;
@@ -115,7 +115,7 @@
             animation: pulse 2s infinite;
             position: relative;
             z-index: 1;
-            margin-top: 1cm;
+            margin-top: 0.8cm;
         }
         .cta-button:hover {
             background-color: #cc0000;
@@ -128,11 +128,11 @@
         }
         .video-container {
             position: relative;
-            padding-bottom: 28.125%;
+            padding-bottom: 56.25%; /* Ajustado para proporção mais comum */
             height: 0;
             overflow: hidden;
-            max-width: 50%;
-            margin: 20px auto;
+            max-width: 80%; /* Reduzido para ocupar menos espaço */
+            margin: 15px auto; /* Reduzido o margin */
             background: #000;
             border-radius: 15px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
@@ -190,27 +190,27 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 20px;
+            margin-top: 15px; /* Reduzido o margin-top */
             gap: 10px;
         }
         .faq-section {
-            margin-top: 40px;
+            margin-top: 30px; /* Reduzido o margin-top */
             text-align: center;
             max-width: 600px;
-            margin: 40px auto;
+            margin: 30px auto;
         }
         .faq-section h2 {
             font-size: 24px;
             font-weight: 700;
             color: #ffd700;
-            margin-bottom: 20px;
+            margin-bottom: 15px; /* Reduzido o margin-bottom */
         }
         .faq-item {
-            margin-bottom: 20px;
+            margin-bottom: 15px; /* Reduzido o margin-bottom */
         }
         .faq-item h3 {
             font-size: 18px;
-            margin-bottom: 10px;
+            margin-bottom: 8px; /* Reduzido o margin-bottom */
             color: #ffffff;
             text-align: center;
         }
@@ -223,40 +223,40 @@
         .disclaimer {
             font-size: 12px;
             color: #e0e0e0;
-            margin-top: 40px;
+            margin-top: 30px; /* Reduzido o margin-top */
             text-align: center;
         }
         @media (max-width: 600px) {
             body {
-                padding-top: 120px;
+                padding-top: 100px; /* Reduzido para menos espaço no topo */
             }
             header.logo img {
-                max-width: 120px; /* Reduzido de 180px para 120px */
+                max-width: 100px; /* Reduzido ainda mais para telas menores */
             }
             nav ul {
                 flex-direction: column;
                 gap: 10px;
             }
             h1 {
-                font-size: 24px;
+                font-size: 26px; /* Ajustado para melhor legibilidade */
             }
             p {
-                font-size: 16px;
+                font-size: 16px; /* Aumentado para melhor legibilidade */
                 margin-bottom: 0.5cm;
             }
             p:last-of-type {
                 margin-bottom: 0.5cm;
             }
             .cta-button {
-                padding: 14px 30px;
-                font-size: 18px;
+                padding: 12px 25px; /* Reduzido o padding */
+                font-size: 16px; /* Reduzido o tamanho da fonte */
                 margin-top: 0.5cm;
             }
             .promo-text {
                 font-size: 18px;
             }
             .video-container {
-                max-width: 100%;
+                max-width: 90%; /* Ajustado para ocupar menos espaço */
                 padding-bottom: 56.25%;
             }
             .download-button, .download-app-button {
@@ -274,7 +274,7 @@
                 font-size: 16px;
             }
             .faq-item p {
-                font-size: 14px;
+                font-size: 14px; /* Aumentado para melhor legibilidade */
             }
         }
     </style>
