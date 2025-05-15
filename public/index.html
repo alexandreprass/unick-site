@@ -78,13 +78,18 @@
         nav a:hover {
             color: #ffd700;
         }
-        header.logo img {
-            max-width: 80px; /* Tamanho máximo fixo */
-            width: 80px; /* Força a largura exata */
-            height: auto; /* Mantém a proporção */
+        .logo {
+            font-size: 24px; /* Reduzido drasticamente o tamanho do texto do logo */
+            font-weight: 700;
+            color: #ffd700;
+            text-transform: uppercase;
             display: block;
             margin: 0 auto;
-            object-fit: contain; /* Garante que a imagem não estique */
+            text-align: center;
+        }
+        .logo span {
+            font-size: 28px; /* Tamanho um pouco maior para o "2.0" */
+            color: #ffffff;
         }
         h1 {
             font-size: 32px;
@@ -232,11 +237,11 @@
             body {
                 padding-top: 100px;
             }
-            header.logo img {
-                max-width: 80px; /* Reduzido para 80px em telas menores */
-                width: 80px; /* Força a largura exata */
-                height: auto;
-                object-fit: contain;
+            .logo {
+                font-size: 18px !important; /* Reduzido ainda mais para telas menores */
+            }
+            .logo span {
+                font-size: 20px !important; /* Ajustado para telas menores */
             }
             nav ul {
                 flex-direction: column;
@@ -297,7 +302,7 @@
     <div class="container">
         <header>
             <div class="logo">
-                <img src="/logo.png" alt="Logo UNICK FOREX 2.0">
+                UNICK FOREX <span>2.0</span>
             </div>
         </header>
         <main>
